@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <section class="hero">
+        <div class="main-width">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-p"></i>
+                </div>
+                <nav>
+                 <div class="hamb">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                 </div>
+                 <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="project/index.html">Projects</a></li>
+                    <li class="btn"><a href="#">Contact Me</a></li>
+                 </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-text">
+                    <h3>Hi, There!</h3>
+                    <h1>I Am <span class="input"></span></h1>
+                    <p>Front End Developer</p>
+                    <img src="img/prateek.jpeg" alt="myImage" class="img">
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=100008541550203"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/i_am_prateek_29/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/prateek-chaudhary-286a07a3"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com/Prateek043"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <button type="button" class="cv"><a href="cv/Prateek Kumar (1).pdf"target="_blank">Download CV</a></button>
+                </div>
+                <div class="bottom">
+                    <p class="contact"><span>Mobile no</span>-9546402716</p>
+                    <p>@ 2022 Prateek-All Rights Reserved</p>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript"src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed=new Typed(".input",{
+            strings:["Prateek Kumar","Web Developer","Coder","Photographer"],
+            typeSpeed:70,
+            backSpeed:60,
+            loop:true,
+        });
+        var hamburger=document.querySelector(".hamb");
+var navlist=document.querySelector(".nav-list");
+var links=document.querySelector(".nav-list li");
+hamburger.addEventListener("click",function(){
+    this.classList.toggle("click");
+    navlist.classList.toggle("open");
+});
+    </script>
+</body>
+</html>

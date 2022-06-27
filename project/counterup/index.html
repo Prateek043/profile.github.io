@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counterup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <div class="counter-container">
+     <i class="fab fa-facebook fa-3x"></i>
+   <div class="counter"data-target=
+   "1500">1500</div>
+   <span>facebook Fans</span>
+</div>
+<div class="counter-container">
+    <i class="fab fa-youtube fa-3x"></i>
+  <div class="counter"data-target=
+  "1000">1000</div>
+  <span>Youtube fans</span>
+</div>
+<div class="counter-container">
+    <i class="fab fa-twitter fa-3x"></i>
+  <div class="counter"data-target=
+  "500">500</div>
+  <span>Twitter Fans</span>
+</div>
+    <script src="jquery.counterup.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script>
+     jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            })
+        })
+</script>
+</body>
+</html>
